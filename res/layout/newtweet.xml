@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	    
+	<!-- Top bar -->
+	<LinearLayout android:id="@+id/newTweetTopBar"
+	    android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="#465E75"
+    	android:padding="5px"
+	    ><!-- android:layout_weight="1" -->
+    	
+    	<!--  Cancel button -->
+		<Button
+			android:id="@+id/newTweetCancel"
+			android:text="Cancel"
+			android:gravity="center"
+		    android:layout_width="80px"
+			android:layout_height="wrap_content"
+		    android:layout_marginLeft="4px"
+		    android:layout_marginRight="4px"
+			/>
+			
+    	<!--  New tweet! -->
+		<TextView
+			android:id="@+id/newTweetMessage"
+		    android:text=" "
+		    android:gravity="center"
+		    android:layout_width="wrap_content"
+		    android:layout_height="48px"
+		    android:layout_weight="1"
+		    android:layout_marginLeft="10px"
+		    android:layout_marginRight="10px"
+		    android:layout_marginTop="0px"
+		    android:layout_marginBottom="0px"
+		    android:textColor="#ffffff"
+		    android:textSize="15sp"
+		    />
+		   
+		<!-- Post button -->
+		<Button
+			android:id="@+id/newTweetPost"
+			android:text="Post"
+			android:gravity="center"
+		    android:layout_width="80px"
+			android:layout_height="wrap_content"
+		    android:layout_marginLeft="4px"
+		    android:layout_marginRight="4px"
+			/>
+		
+	</LinearLayout>
+    
+    
+	<View android:layout_width="fill_parent" 
+		android:layout_height="1px" 
+		android:background="#000000" />
+    
+    <!-- Text Input -->
+    <EditText 
+		android:id="@+id/newTweetText"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:capitalize="sentences"
+    	android:cursorVisible="true"
+    	android:gravity="top|left"
+    	android:inputType="textCapSentences|textAutoCorrect|textShortMessage|textMultiLine"
+    	android:background="#ffffff"
+    	android:textColor="#000000"
+		android:textSize="18sp" 
+		android:padding="5px"
+		/>
+    
+	<View android:layout_width="fill_parent" 
+		android:layout_height="1px" 
+		android:background="#000000" />
+		
+    <!-- Accessory view -->
+	<LinearLayout android:id="@+id/newTweetAccessoryView"
+	    android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="#465E75"
+    	android:padding="5px"
+	    ><!-- android:layout_weight="1" -->
+    	
+    	
+    	<!--  Remaining count! -->
+		<TextView
+			android:id="@+id/newTweetRemainingCount"
+		    android:text="140"
+		    android:gravity="center"
+		    android:layout_width="wrap_content"
+		    android:layout_height="32px"
+		    android:layout_weight="1"
+		    android:layout_marginLeft="10px"
+		    android:layout_marginRight="10px"
+		    android:layout_marginTop="0px"
+		    android:layout_marginBottom="0px"
+		    android:textColor="#ffffff"
+		    android:textSize="15sp"
+		    />
+
+	</LinearLayout>
+    
+    
+</LinearLayout>

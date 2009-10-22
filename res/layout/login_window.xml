@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/widget30"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#ff000000"
+		android:padding="10px"
+		android:text="Twitter Username"	/>
+	<EditText
+		android:id="@+id/loginUsername"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="10px"
+		android:text=""
+		android:textSize="18sp"
+		android:textColor="#ff000000" />
+	<TextView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="#ff000000"
+		android:padding="10px"
+		android:text="Password" />
+	<EditText
+		android:id="@+id/loginPassword"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="10px"	
+		android:textSize="18sp"
+		android:textColor="#ff000000"
+		android:password="true" />
+	<Button
+		android:id="@+id/loginInitiateLogin"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="Login to Twitter" />
+</LinearLayout>

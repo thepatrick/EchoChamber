@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	    
+	<!-- Top bar -->
+	<LinearLayout android:id="@+id/tweetViewInfoBar"
+	    android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@+drawable/gradient_gray"
+    	android:padding="5px">
+
+    	<!--  User Icon -->
+		<ImageView android:id="@+id/tweetViewAvatar"
+			android:layout_width="48px"
+			android:layout_height="48px"
+		    android:layout_marginBottom="10px"
+		    android:layout_marginLeft="10px"
+		    android:layout_marginRight="0px"
+		    android:layout_marginTop="10px"/>
+		    
+		<LinearLayout android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent">
+		    
+		    <!-- Real name -->
+		    <TextView android:id="@+id/tweetViewRealName"
+			    android:text="A User"
+			    android:gravity="bottom"
+			    android:layout_width="wrap_content"
+			    android:layout_height="36px"
+			    android:layout_marginLeft="10px"
+			    android:layout_marginRight="10px"
+			    android:layout_marginTop="0px"
+			    android:layout_marginBottom="0px"
+			    android:textColor="#111"
+			    android:textSize="20sp"
+			    android:textStyle="bold"
+			    />
+			    
+		    <!-- Screen name -->
+		    <TextView android:id="@+id/tweetViewScreenName"
+			    android:text=".@auser"
+			    android:gravity="top"
+			    android:layout_width="wrap_content"
+			    android:layout_height="20px"
+			    android:layout_marginLeft="10px"
+			    android:layout_marginRight="10px"
+			    android:layout_marginTop="0px"
+			    android:layout_marginBottom="0px"
+			    android:textColor="#222"
+			    android:textSize="15sp"
+			    />
+    	</LinearLayout>
+
+
+		<!-- Info button -->
+		<Button
+			android:id="@+id/tweetViewInfoButton"
+			android:text="info"
+			android:gravity="center"
+		    android:layout_width="48px"
+			android:layout_height="wrap_content"
+		    android:layout_marginLeft="10px"
+		    android:layout_marginRight="10px"
+			/>
+		
+	</LinearLayout>
+	
+	<View android:layout_width="fill_parent" 
+		android:layout_height="1px" 
+		android:background="#585858" />
+    
+	<!-- Tweet View -->
+	
+	<LinearLayout android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="100px"
+	    android:layout_weight="1"
+	    android:background="#ffffff">
+	    
+	    <TextView android:id="@+id/tweetViewTweetContents"
+		    android:text="A User"
+		    android:gravity="left"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15px"
+		    android:layout_marginRight="15px"
+		    android:layout_marginTop="15px"
+		    android:layout_marginBottom="15px"
+		    android:textColor="#000000"
+		    android:textSize="18sp"
+		    />
+	    
+	    <TextView android:id="@+id/tweetViewTweetTime"
+		    android:text=".@auser"
+		    android:gravity="left"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15px"
+		    android:layout_marginRight="15px"
+		    android:layout_marginTop="0px"
+		    android:layout_marginBottom="10px"
+		    android:textColor="#333333"
+		    android:textSize="15sp"
+		    />
+		    
+	    <TextView android:id="@+id/tweetViewTweetSource"
+		    android:text=".@auser"
+		    android:gravity="left"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="15px"
+		    android:layout_marginRight="15px"
+		    android:layout_marginTop="0px"
+		    android:layout_marginBottom="15px"
+		    android:textColor="#333333"
+		    android:textSize="15sp"
+		    />
+		<Button
+			android:id="@+id/tweetViewInReplyTo"
+			android:text="in reply to @username"
+			android:gravity="center"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:layout_marginLeft="15px"
+		    android:layout_marginRight="15px"
+		    android:paddingLeft="10px"
+		    android:paddingRight="10px"
+			/>
+		<Button
+			android:id="@+id/tweetViewWasInReplyTo"
+			android:text="↩ view reply"
+			android:gravity="center"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:layout_marginLeft="15px"
+		    android:layout_marginRight="15px"
+		    android:paddingLeft="10px"
+		    android:paddingRight="10px"
+			/>
+   	</LinearLayout>
+    
+    
+	<View android:layout_width="fill_parent" 
+		android:layout_height="1px" 
+		android:background="#000000" />
+    
+    <!-- Accessory view -->
+	<LinearLayout
+		android:id="@+id/tweetViewToolbar"
+	    android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="55px"
+    	android:padding="5px">
+    	
+		<!--  Reply to this -->
+		<Button
+			android:id="@+id/tweetViewReply"
+			android:text="Re"
+			android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:layout_marginLeft="4px"
+		    android:layout_marginRight="4px"
+		    android:layout_weight="1"
+			/>
+			
+    	<!--  DM to this user -->
+		<Button
+			android:id="@+id/tweetViewSendDM"
+			android:text="DM"
+			android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:layout_marginLeft="4px"
+		    android:layout_marginRight="4px"
+		    android:layout_weight="1"
+			/>
+			
+    	<!--  Favourite this -->
+		<Button
+			android:id="@+id/tweetViewMakeFavourite"
+			android:text="&lt;3"
+			android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:layout_marginLeft="4px"
+		    android:layout_marginRight="4px"
+		    android:layout_weight="1"
+			/>
+			
+    	<!--  Retweet this -->
+		<Button
+			android:id="@+id/tweetViewRetweet"
+			android:text="RT"
+			android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:layout_marginLeft="4px"
+		    android:layout_marginRight="4px"
+		    android:layout_weight="1"
+			/>
+	</LinearLayout>
+    
+    
+</LinearLayout>
